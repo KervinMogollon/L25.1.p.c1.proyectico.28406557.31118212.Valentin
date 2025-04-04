@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section>
+        <input type="text" id="florForm_inCod">
+        <input type="text" id="florForm_inEnvase">
+        <input type="text" id="florForm_inCostBase">
+        <input type="text" id="florForm_inTipo">
+        <button id="florForm_btProcesar">Procesar Ramo de Flores</button>
+    </section>
+
+    <section>
+        <input type="text" id="frutaForm_inCod">
+        <input type="text" id="frutaForm_inEnvase">
+        <input type="text" id="frutaForm_inCostBase">
+        <input type="text" id="frutaForm_inExtra">
+        <button id="frutaForm_btProcesar">Procesar Ramo de Frutas</button>
+    </section>
+
+    <section>
+        <div id="salida">
+        </div>
+    </section>
+
+</body>
+<script type="module">
+    import CL_Main from "./js/Main.js";
+    new CL_Main()
+</script>
+
+</html>
