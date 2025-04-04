@@ -42,6 +42,14 @@ export default class mTienda {
         return this.acumVentasFrutas
     }
 
+    cantFloresNatu(){
+        return this.cntFloresNaturales
+    }
+    
+    cantFloresNatuEnvaMed(){
+        return this.cntFloresNaturalesTipo2
+    }
+
     promdFloresNaturalesEnMediano(){
         return (this.cntFloresNaturalesTipo2 / this.cntFloresNaturales) * 100
     }

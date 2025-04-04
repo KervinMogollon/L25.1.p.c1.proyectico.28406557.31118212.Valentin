@@ -16,7 +16,7 @@ export default class mFrutas extends Ramos {
 
     descuento() {
         if (this.extra == "SI")
-            return this.costBase * 0.18
+            return this.costBase * 0.15
         else
             return 0
     }

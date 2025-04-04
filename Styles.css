@@ -1,8 +1,10 @@
 table {
-    width:40%;
+    width:60%;
   }
   table
-  th,
+  th{
+ background-color:  rgba(149, 155, 159, 0.339);
+  }
   td {
     border: 1px solid black;
     text-align: center;
