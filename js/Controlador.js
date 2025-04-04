@@ -7,7 +7,7 @@ export default class CL_Controlador{
     procesarFlores(){
         this.modelo.procesarRamo(this.vista.iniciarFlores())
     
-        this.vista.Reporte(
+        this.vista.reporte1(
             this.modelo.montoFinal(),
             this.modelo.promdFloresNaturalesEnMediano(),
         )
@@ -16,7 +16,7 @@ export default class CL_Controlador{
     procesarFrutas(){
         this.modelo.procesarRamo(this.vista.iniciarFrutas())
     
-        this.vista.Reporte(
+        this.vista.reporte2(
             this.modelo.montoFinal(),
             this.modelo.promdFloresNaturalesEnMediano(),
         )

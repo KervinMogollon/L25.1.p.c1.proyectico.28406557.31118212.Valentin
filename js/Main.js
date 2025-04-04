@@ -10,4 +10,6 @@ export default class CL_Main {
 
         vista.controlador = controlador
     }
+
+
 }

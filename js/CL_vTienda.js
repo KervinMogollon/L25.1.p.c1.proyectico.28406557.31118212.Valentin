@@ -29,7 +29,7 @@ export default class vTienda {
             costBase: this.vFlor.costBase,
             tipo: this.vFlor.tipo,
         })
-        return mFlores;
+        return this.mFlor;
     }
 
     iniciarFrutas() {
@@ -39,11 +39,20 @@ export default class vTienda {
             costBase: this.vFrut.costBase,
             extra: this.vFrut.extra,
         })
+        return this.mFrut;
     }
 
-    Reporte(pagoTotal, promedio){
-        this.salida.innerHTML +=`
+    reporte1(pagoTotal, porcentaje) {
+        this.salida.innerHTML = `
         <br>Total pagado: ${pagoTotal}
+        <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}
+        `
+    }
+
+    reporte2(pagoTotal, porcentaje) {
+        this.salida.innerHTML = `
+        <br>Total pagado: ${pagoTotal}
+        <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}
         `
     }
 
