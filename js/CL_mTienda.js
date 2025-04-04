@@ -30,13 +30,21 @@ export default class mTienda {
         
     }
 
-    
-
     montoFinal(){
         return this.acumVentas
+    }
+
+    montoFinalFlores(){
+        return this.acumVentasFlores
+    }
+
+    montoFinalFrutas(){
+        return this.acumVentasFrutas
     }
 
     promdFloresNaturalesEnMediano(){
         return (this.cntFloresNaturalesTipo2 / this.cntFloresNaturales) * 100
     }
+
+
 }

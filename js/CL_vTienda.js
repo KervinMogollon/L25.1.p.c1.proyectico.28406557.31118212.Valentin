@@ -42,14 +42,7 @@ export default class vTienda {
         return this.mFrut;
     }
 
-    reporte1(pagoTotal, porcentaje) {
-        this.salida.innerHTML = `
-        <br>Total pagado: ${pagoTotal}
-        <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}
-        `
-    }
-
-    reporte2(pagoTotal, porcentaje) {
+    reporte(pagoTotal, porcentaje) {
         this.salida.innerHTML = `
         <br>Total pagado: ${pagoTotal}
         <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}
