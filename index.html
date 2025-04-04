@@ -13,13 +13,13 @@
         <label><strong>Ingrese el Codigo del Ramo de Flores</strong></label>
         <input type="text" id="florForm_inCod">
         <label><strong>Indique el tamaño del Ramo de Flores<br>
-        1:Grande. 2:mediano. 3.Pequeño</strong></label>
+                1:Grande. 2:mediano. 3.Pequeño</strong></label>
         <input type="text" id="florForm_inEnvase">
         <label><strong>Indique el Costo del Ramo de flores</strong></label>
         <input type="text" id="florForm_inCostBase">
         <label><strong>Indique el Tipo de Flor en el Ramo
-            <br>N:Naturales. A:Artificiales
-        </strong></label>
+                <br>N:Naturales. A:Artificiales
+            </strong></label>
         <input type="text" id="florForm_inTipo">
         <button id="florForm_btProcesar">Procesar Ramo de Flores</button>
     </section>
@@ -28,19 +28,23 @@
         <label><strong>Ingrese el Codigo del Ramo de Frutas</strong></label>
         <input type="text" id="frutaForm_inCod">
         <label><strong>Indique el tamaño del Ramo de Frutas
-            <br>1:Grande. 2:mediano. 3.Pequeño</strong></label>
+                <br>1:Grande. 2:mediano. 3.Pequeño</strong></label>
         <input type="text" id="frutaForm_inEnvase">
         <label><strong>Indique el Costo del Ramo de flores</strong></label>
         <input type="text" id="frutaForm_inCostBase">
         <label><strong>Indiquecon un "SI" si desea agregar
-            <br>el Aditivo a su Ramo
-        </strong></label>
+                <br>el Aditivo a su Ramo
+            </strong></label>
         <input type="text" id="frutaForm_inExtra">
         <button id="frutaForm_btProcesar">Procesar Ramo de Frutas</button>
     </section>
 
     <section>
         <div id="salida">
+            <br>Total pagado: 0$
+            <br>Cantidad de flores naturales: 0
+            <br>Cantidad de flores naturales con envase mediano: 0
+            <br>Porcentaje de flores naturales con envase mediano: 0%
         </div>
 
         <table id="tabla1">
@@ -53,9 +57,13 @@
                 <th>Incremento</th>
                 <th>Precio Total</th>
             </tr>
-        <table id="subT1"></table>
+            <table id="subT1">
+                <th>Monto Total de Ramo de Flores</th>
+                <td>0$</td>
+            </table>
         </table><br>
-        <table id="tabla2">
+
+        <table id="tabla2">a
             <tr>
                 <th>Codigo</th>
                 <th>Envase</th>
@@ -64,8 +72,12 @@
                 <th>Descuento</th>
                 <th>Precio Total</th>
             </tr>
+            <table id="subT2">
+                <th>Monto Total de Ramo de Frutas</th>
+                <td>0$</td>
+            </table>
         </table>
-        <table id="subT2"></table>
+
     </section>
 
 </body>
