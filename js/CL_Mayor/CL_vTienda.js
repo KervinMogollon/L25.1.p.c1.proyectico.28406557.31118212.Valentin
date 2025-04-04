@@ -1,8 +1,8 @@
-import mFlores from "./Hijas/CL_mFlores.js";
-import vFlores from "./Hijas/CL_vFlores.js";
+import mFlores from "../CLs_Hijas/CL_mFlores.js";
+import vFlores from "../CLs_Hijas/CL_vFlores.js";
 
-import mFrutas from "./Hijas/CL_mFrutas.js";
-import vFruta from "./Hijas/CL_vFrutas.js";
+import mFrutas from "../CLs_Hijas/CL_mFrutas.js";
+import vFruta from "../CLs_Hijas/CL_vFrutas.js";
 
 export default class vTienda {
     constructor() {

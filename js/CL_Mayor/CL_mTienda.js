@@ -1,5 +1,5 @@
-import mFlores from "./Hijas/CL_mFlores.js";
-import mFrutas from "./Hijas/CL_mFrutas.js";
+import mFlores from "../CLs_Hijas/CL_mFlores.js";
+import mFrutas from "../CLs_Hijas/CL_mFrutas.js";
 
 export default class mTienda {
     constructor() {
