@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <section>
+    <section id="florForm">
+        <h3>Ingrese Los Datos del Ramo de flores</h3>
         <label><strong>Ingrese el Codigo del Ramo de Flores</strong></label>
         <input type="text" id="florForm_inCod">
         <label><strong>Indique el tamaño del Ramo de Flores<br>
@@ -21,10 +22,12 @@
                 <br>N:Naturales. A:Artificiales
             </strong></label>
         <input type="text" id="florForm_inTipo">
-        <button id="florForm_btProcesar">Procesar Ramo de Flores</button>
+        <button id="florForm_btProcesar"><strong>Procesar Ramo de Flores</strong></button>
+        <p>
     </section>
 
     <section>
+        <h3>Ingrese Los Datos del Ramo de flores</h3>
         <label><strong>Ingrese el Codigo del Ramo de Frutas</strong></label>
         <input type="text" id="frutaForm_inCod">
         <label><strong>Indique el tamaño del Ramo de Frutas
@@ -36,18 +39,24 @@
                 <br>el Aditivo a su Ramo
             </strong></label>
         <input type="text" id="frutaForm_inExtra">
-        <button id="frutaForm_btProcesar">Procesar Ramo de Frutas</button>
+        <button id="frutaForm_btProcesar"><strong>Procesar Ramo de Frutas</strong></button>
+        <p>
     </section>
 
-    <section>
+    <section id="tablas">
+        <h3>Reportes</h3>
+
         <div id="salida">
-            <br>Total pagado: 0$
-            <br>Cantidad de flores naturales: 0
-            <br>Cantidad de flores naturales con envase mediano: 0
-            <br>Porcentaje de flores naturales con envase mediano: 0%
-        </div>
+            <strong>Total pagado:</strong> 0$
+            <br><strong>Cantidad de flores naturales:</strong> 0
+            <br><strong>Cantidad de flores naturales con envase mediano:</strong> 0
+            <br><strong>Porcentaje de flores naturales con envase mediano:</strong> 0%
+        </div><br>
 
         <table id="tabla1">
+            <tr id="repoRamFlor">
+                <th>Reporte Ramo de Flores</th>
+            </tr>
             <tr>
                 <th>Codigo</th>
                 <th>Envase</th>
@@ -63,7 +72,10 @@
             </table>
         </table><br>
 
-        <table id="tabla2">a
+        <table id="tabla2">
+            <tr id="repoRamFru">
+                <th>Reporte Ramo de Frutas</th>
+            </tr>
             <tr>
                 <th>Codigo</th>
                 <th>Envase</th>

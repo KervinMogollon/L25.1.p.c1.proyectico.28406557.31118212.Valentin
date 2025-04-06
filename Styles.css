@@ -1,12 +1,28 @@
-table {
-  width: 60%;
+/* General Styles for sections */
+section {
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  /* Añadido: Definimos cómo deben comportarse en el layout */
+  display: inline-block; /* Mostrar las secciones una junto a la otra */
+  vertical-align: top; /* Alineación superior */
+  width: 25%; /* Cada sección ocupa menos del 50% del ancho para ajustarse */
+  box-sizing: border-box; /* Para incluir padding y borders en el tamaño */
 }
 
-table
+
+/* Tablas colocadas una junto a la otra */
+table {
+  
+  width: 80%; /* Ancho para cada tabla */
+  vertical-align: top; /* Alineación superior */
+  margin-right: 10px; /* Espaciado entre tablas */
+  border-collapse: collapse; /* Estilo limpio para bordes */
+}
 
 th {
   border: 1px solid rgb(0, 0, 0);
-  background-color: rgba(102, 4, 172, 0.749);
+  background-color: rgba(102, 4, 172, 0.694);
 }
 
 td {
@@ -15,12 +31,42 @@ td {
   background-color: rgba(73, 71, 71, 0.194);
 }
 
+
+
+/* Inputs */
 input {
   display: block;
-  height: max-content;
+  margin: 5px 0; /* Espaciado vertical entre inputs */
 }
 
-section {
-  border: 1px solid black;
+/* Botones */
+button {
+  display: block;
   margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgba(18, 80, 214, 0.677);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
 }
+
+button:hover {
+  background-color: rgb(43, 249, 7);
+}
+
+#tablas{
+  width: 60%;
+}
+
+#repoRamFlor{
+  width: 60%;
+  text-align: left;
+  background-color: rgb(255, 0, 0);
+}
+
+#repoRamFru{
+  width: 60%;
+  text-align: left;
+  background-color: rgb(255, 0, 0);
+}
+

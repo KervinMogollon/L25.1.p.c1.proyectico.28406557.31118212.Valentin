@@ -66,10 +66,10 @@ export default class vTienda {
 
 
         this.salida.innerHTML = `
-        <br>Total pagado: ${pagoTotal}
-        <br>Cantidad de flores naturales: ${cantFlorNat}
-        <br>Cantidad de flores naturales con envase mediano: ${cantFloresNatEnvaMed}
-        <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}%
+            <strong>Total pagado:</strong> ${pagoTotal}$
+        <br><strong>Cantidad de flores naturales:</strong> ${cantFlorNat}
+        <br><strong>Cantidad de flores naturales con envase mediano:</strong> ${cantFloresNatEnvaMed}
+        <br><strong>Porcentaje de flores naturales con envase mediano:</strong> ${porcentaje}%
         `
     }
 
@@ -94,10 +94,10 @@ export default class vTienda {
         `
 
         this.salida.innerHTML = `
-        <br>Total pagado: ${pagoTotal}$
-        <br>Cantidad de flores naturales: ${cantFlorNat}
-        <br>Cantidad de flores naturales con envase mediano: ${cantFloresNatEnvaMed}
-        <br>Porcentaje de flores naturales con envase mediano: ${porcentaje}%
+            <strong>Total pagado:</strong> ${pagoTotal}$
+        <br><strong>Cantidad de flores naturales:</strong> ${cantFlorNat}
+        <br><strong>Cantidad de flores naturales con envase mediano:</strong> ${cantFloresNatEnvaMed}
+        <br><strong>Porcentaje de flores naturales con envase mediano:</strong> ${porcentaje}%
         `
     }
 
