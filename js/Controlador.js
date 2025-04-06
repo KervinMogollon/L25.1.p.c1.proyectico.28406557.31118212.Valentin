@@ -12,7 +12,7 @@ export default class CL_Controlador{
             this.modelo.montoFinal(),
             this.modelo.cantFloresNatu(),
             this.modelo.cantFloresNatuEnvaMed(),
-            this.modelo.promdFloresNaturalesEnMediano(),
+            this.modelo.porcFloresNaturaEnvaMediano(),
         )
     }
 
@@ -24,7 +24,7 @@ export default class CL_Controlador{
             this.modelo.montoFinal(),
             this.modelo.cantFloresNatu(),
             this.modelo.cantFloresNatuEnvaMed(),
-            this.modelo.promdFloresNaturalesEnMediano(),
+            this.modelo.porcFloresNaturaEnvaMediano(),
         )
     }
 }

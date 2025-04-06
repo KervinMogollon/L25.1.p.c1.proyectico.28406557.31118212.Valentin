@@ -23,35 +23,38 @@ export default class mTienda {
                 }
             }
         }
-        
-        if(r instanceof mFrutas){
+
+        if (r instanceof mFrutas) {
             this.acumVentasFrutas += r.montTotal()
         }
-        
+
     }
 
-    montoFinal(){
+    montoFinal() {
         return this.acumVentas
     }
 
-    montoFinalFlores(){
+    montoFinalFlores() {
         return this.acumVentasFlores
     }
 
-    montoFinalFrutas(){
+    montoFinalFrutas() {
         return this.acumVentasFrutas
     }
 
-    cantFloresNatu(){
+    cantFloresNatu() {
         return this.cntFloresNaturales
     }
-    
-    cantFloresNatuEnvaMed(){
+
+    cantFloresNatuEnvaMed() {
         return this.cntFloresNaturalesTipo2
     }
 
-    promdFloresNaturalesEnMediano(){
-        return (this.cntFloresNaturalesTipo2 / this.cntFloresNaturales) * 100
+    porcFloresNaturaEnvaMediano() {
+        if (this.cntFloresNaturales > 0)
+            return (this.cntFloresNaturalesTipo2 / this.cntFloresNaturales) * 100
+        else
+            return 0
     }
 
 
