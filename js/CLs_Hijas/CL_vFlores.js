@@ -12,11 +12,11 @@ export default class vFlores{
     }
 
     get envase(){
-        return this.inEnvase.value;
+        return +this.inEnvase.value;
     }
 
     get costBase(){
-        return this.inCostBase.value;
+        return +this.inCostBase.value;
     }
 
     get tipo(){
