@@ -2,33 +2,26 @@
 section {
   border: none;
   margin-top: 10px;
-  padding: 5px;
-  /* Añadido: Definimos cómo deben comportarse en el layout */
   display: inline-block; /* Mostrar las secciones una junto a la otra */
   vertical-align: top; /* Alineación superior */
   width: 25%; /* Cada sección ocupa menos del 50% del ancho para ajustarse */
-  box-sizing: border-box; /* Para incluir padding y borders en el tamaño */
 }
 
 
 /* Tablas colocadas una junto a la otra */
 table {
-  
   width: 80%; /* Ancho para cada tabla */
   vertical-align: top; /* Alineación superior */
   margin-right: 10px; /* Espaciado entre tablas */
-  border-collapse: collapse; /* Estilo limpio para bordes */
 }
 
 th {
-  border: 1px solid rgb(0, 0, 0);
-  background-color: rgba(102, 4, 172, 0.694);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 td {
   border: 1px solid black;
   text-align: center;
-  background-color: rgba(73, 71, 71, 0.194);
 }
 
 
@@ -43,23 +36,24 @@ input {
 button {
   display: block;
   margin-top: 10px;
-  padding: 8px 16px;
-  background-color: rgba(18, 80, 214, 0.677);
-  color: rgb(0, 0, 0);
-  border: none;
   cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
 }
 
-button:hover {
-  background-color: rgb(43, 249, 7);
-}
-
 #tablas{
-  width: 60%;
+  width: 49%;
 }
 
 #repoRam{
-  width: 60%;
+  width: 28%;
   text-align: left;
-  background-color: rgb(255, 0, 0);
+}
+
+#subT1{
+  width: 40%;
+  margin-left: 262px;
+}
+
+#subT2{
+  width: 40%;
+  margin-left: 262px;
 }
