@@ -3,6 +3,7 @@ export default class vFruta{
         this.inCod = document.getElementById("frutaForm_inCod");
         this.inEnvase = document.getElementById("frutaForm_inEnvase");
         this.inCostBase = document.getElementById("frutaForm_inCostBase");
+        this.inCupon = document.getElementById("frutaForm_inCupon")
         this.inExtra = document.getElementById("frutaForm_inExtra");
         this.btProcesar = document.getElementById("frutaForm_btProcesar");
     }
@@ -17,6 +18,10 @@ export default class vFruta{
 
     get costBase(){
         return this.inCostBase.value;
+    }
+
+    get cupon(){
+        return this.inCupon.value
     }
 
     get extra(){

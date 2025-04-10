@@ -1,8 +1,8 @@
 import Ramos from "../CL_Ramo.js";
 
 export default class mFrutas extends Ramos {
-    constructor({ cod, envase, costBase, extra }) {
-        super(cod, envase, costBase);
+    constructor({ cod, envase, costBase, cupon, extra }) {
+        super(cod, envase, costBase, cupon);
         this.extra = extra;
     }
 
@@ -16,17 +16,17 @@ export default class mFrutas extends Ramos {
 
     descuento() {
         if (this.extra == "SI")
-            return this.costBase * 0.15
+            return this.costNeto() * 0.15
         else
             return 0
     }
 
     montTotal() {
         if (this.extra == "SI") {
-            return this.costBase - this.descuento()
+            return this.costNeto() - this.descuento()
         }
         else
-            return this.costBase
+            return this.costNeto()
     }
 }
 

@@ -1,8 +1,8 @@
 import Ramos from "../CL_Ramo.js";
 
 export default class mFlores extends Ramos {
-    constructor({ cod, envase, costBase, tipo }) {
-        super(cod, envase, costBase);
+    constructor({ cod, envase, costBase, cupon, tipo }) {
+        super(cod, envase, costBase, cupon);
         this.tipo = tipo
     }
 
@@ -16,23 +16,23 @@ export default class mFlores extends Ramos {
 
     descuento() {
         if (this.tipo == "A")
-            return this.costBase * 0.10
+            return this.costNeto() * 0.10
         else
             return 0
     }
 
     incremento() {
         if (this.tipo == "N")
-            return this.costBase * 0.08
+            return this.costNeto() * 0.08
         else
             return 0
     }
 
     montTotal() {
         if (this.tipo == "A")
-            return this.costBase - this.descuento()
+            return this.costNeto() - this.descuento()
         else if (this.tipo == "N")
-            return this.costBase + this.incremento()
+            return this.costNeto() + this.incremento()
         else
             return 0
     }

@@ -31,6 +31,7 @@ export default class vTienda {
             cod: this.vFlor.cod,
             envase: this.vFlor.envase,
             costBase: this.vFlor.costBase,
+            cupon: this.vFlor.cupon,
             tipo: this.vFlor.tipo,
         })
         return this.mFlor;
@@ -41,6 +42,7 @@ export default class vTienda {
             cod: this.vFrut.cod,
             envase: this.vFrut.envase,
             costBase: this.vFrut.costBase,
+            cupon: this.vFrut.cupon,
             extra: this.vFrut.extra,
         })
         return this.mFrut;

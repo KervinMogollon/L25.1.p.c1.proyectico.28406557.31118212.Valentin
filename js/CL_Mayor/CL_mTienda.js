@@ -3,16 +3,17 @@ import mFrutas from "../CLs_Hijas/CL_mFrutas.js";
 
 export default class mTienda {
     constructor() {
-        this.acumVentas = 0.00;
         this.acumVentasFlores = 0.00;
         this.acumVentasFrutas = 0.00;
         this.cntFloresNaturales = 0;
         this.cntFloresNaturalesTipo2 = 0;
+        this.cntCuponMay20 = 0;
+        this.acumCupones = 0.00;
+        this.cntCupones = 0;
+
     }
 
     procesarRamo(r) {
-        this.acumVentas += r.montTotal();
-
         if (r instanceof mFlores) {
             this.acumVentasFlores += r.montTotal()
 
@@ -28,10 +29,20 @@ export default class mTienda {
             this.acumVentasFrutas += r.montTotal()
         }
 
+        if(r.cupon > 20)
+            this.cntCuponMay20++
+
+        if(r.cupon > 0)
+
+
+
+
+
+
     }
 
     montoFinal() {
-        return this.acumVentas
+        return this.acumVentasFlores + this.acumVentasFrutas
     }
 
     montoFinalFlores() {
